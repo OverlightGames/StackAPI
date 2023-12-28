@@ -5,6 +5,7 @@ C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\commands\HealCommand.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\WearableBlockItem.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\ClickableItem.java
+C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\NonStackableItem.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\commands\StackCommandManager.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\StackItem.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\UnplaceableBlockItem.java
@@ -15,4 +16,5 @@ C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\commands\PreviewCommand.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\StackItemDataKey.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\persistentdatatypes\EquipmentSlotDataType.java
+C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\persistentdatatypes\UUIDDataType.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\StackDisplayItem.java
