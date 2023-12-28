@@ -1,0 +1,4 @@
+name: StackAPI
+version: '1.0.7'
+main: me.higherlevel.stackapi.StackAPI
+api-version: '1.20'

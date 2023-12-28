@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StackAPI:jar">
+    <output-path>$PROJECT_DIR$/../../Servers/testing 1.20.2/plugins</output-path>
+    <root id="archive" name="StackAPI.jar">
+      <element id="module-output" name="StackAPI" />
+      <element id="extracted-dir" path="$USER_HOME$/.m2/repository/dev/jorel/commandapi-bukkit-shade/9.3.0/commandapi-bukkit-shade-9.3.0.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: dev.jorel:commandapi-bukkit-shade:9.3.0" />
+    </root>
+  </artifact>
+</component>
