@@ -18,6 +18,7 @@ import java.util.function.Consumer;
  */
 public abstract class StackItem implements Listener {
     public ItemStack item;
+    public String id;
 
     protected void createSimpleItem(Material material) {
         item = new ItemStack(material);
@@ -46,6 +47,29 @@ public abstract class StackItem implements Listener {
      */
     public void registerItem(String id) {
         StackItemManager.registerItem(this, id);
+        this.id = id;
+    }
+
+    /**
+     * <p>Checks if the <b>item</b>'s ID found in its {@link org.bukkit.persistence.PersistentDataContainer PersistentDataContainer} matches the {@link StackItem} object's {@link #id}.</p>
+     * <p>If the {@link StackItem} is never registered i.e. the {@link #id} is never set, then this will always return false.</p>
+     * @param item The {@link ItemStack} to check its ID for
+     * @return true if the {@link ItemStack}'s ID matches the {@link StackItem} object's {@link #id}, otherwise false
+     */
+    public boolean itemIdMatches(ItemStack item) {
+        if (id == null) return false;
+        if (StackItemManager.getId(item) == null) return false;
+        return StackItemManager.getId(item).equals(id);
+    }
+
+    /**
+     * Checks if the <b>item</b>'s ID found in its {@link org.bukkit.persistence.PersistentDataContainer PersistentDataContainer} matches the specified <b>id</b>.
+     * @param item The {@link ItemStack} to check its ID for
+     * @param id The {@link String} that has to be equal to the item's ID
+     * @return true if the {@link ItemStack}'s ID matches the specified ID, otherwise false
+     */
+    public boolean itemIdMatches(ItemStack item, String id) {
+        return StackItemManager.getId(item) == id;
     }
 
     /**

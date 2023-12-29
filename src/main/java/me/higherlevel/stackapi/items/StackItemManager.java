@@ -62,7 +62,13 @@ public class StackItemManager implements Listener {
         return items.get(id);
     }
 
+    /**
+     * Gets the ID of the ItemStack.
+     * @param item The item to get the ID from
+     * @return The ID of the item if it has one, otherwise null
+     */
     public static String getId(ItemStack item) {
+        if (item == null) return null;
         if (!item.hasItemMeta()) return null;
         if (!item.getItemMeta().getPersistentDataContainer().has(ID_KEY.key, ID_KEY.type)) return null;
         return (String) item.getItemMeta().getPersistentDataContainer().get(ID_KEY.key, ID_KEY.type);
