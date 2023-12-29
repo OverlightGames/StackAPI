@@ -37,9 +37,10 @@ public class StackItemManager implements Listener {
                 while (inventoryIterator.hasNext()) {
                     ItemStack item = inventoryIterator.next();
                     if (item == null) continue;
-                    if (!NonStackableItem.isNonStackable(item)) continue;
+                    if (NonStackableItem.getNonStackableUuid(item) == null) continue;
+                    if (!NonStackableItem.getNonStackableUuid(item).equals(NonStackableItem.initialUuid)) continue;
                     if (item.getAmount() != 1) continue;
-                    NonStackableItem.applyItem(item);
+                    NonStackableItem.randomizeItem(item);
                 }
             }
         }, 0L, 5L);
