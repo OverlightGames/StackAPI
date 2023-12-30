@@ -1,6 +1,5 @@
 package me.higherlevel.stackapi.items;
 
-import me.higherlevel.stackapi.StackAPI;
 import me.higherlevel.stackapi.persistentdatatypes.EquipmentSlotDataType;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -16,7 +15,7 @@ import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
-public class WearableBlockItem implements Listener {
+public class WearableItem implements Listener {
     private static final StackItemDataKey WEARABLE_BLOCK_SLOT_KEY = new StackItemDataKey("wearable_block_slot", new EquipmentSlotDataType());
 
     public static void applyItem(@NotNull ItemStack item, @NotNull EquipmentSlot slot) {

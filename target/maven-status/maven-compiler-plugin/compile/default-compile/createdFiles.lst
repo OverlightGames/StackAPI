@@ -14,11 +14,11 @@ me\higherlevel\stackapi\commands\PreviewCommand$1.class
 me\higherlevel\stackapi\items\TickableItem.class
 me\higherlevel\stackapi\persistentdatatypes\EquipmentSlotDataType.class
 me\higherlevel\stackapi\commands\PreviewCommand.class
+me\higherlevel\stackapi\items\WearableItem.class
 me\higherlevel\stackapi\items\StackSkullItem.class
 me\higherlevel\stackapi\StackAPI.class
 me\higherlevel\stackapi\items\StackItemManager.class
 me\higherlevel\stackapi\items\StackItemDataKey.class
-me\higherlevel\stackapi\items\WearableBlockItem.class
 me\higherlevel\stackapi\persistentdatatypes\EquipmentSlotDataType$1.class
 me\higherlevel\stackapi\items\DisplayItem.class
 me\higherlevel\stackapi\items\ClickableItem.class

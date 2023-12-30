@@ -33,9 +33,4 @@ public class NonStackableItem implements Listener {
     public static UUID getNonStackableUuid(ItemStack item) {
         return (UUID) NON_STACKABLE_KEY.getData(item);
     }
-
-//    @EventHandler
-//    public void onDragNonStackable(InventoryDragEvent e) {
-//        if (e.getType().equals(DragType.SINGLE))
-//    }
 }

@@ -33,10 +33,6 @@ public class StackCommandManager {
         new PreviewCommand();
         new UnicodeCommand();
         new StackItemCommand();
-
-        for (CommandAPICommand cmd : commands) {
-            cmd.register();
-        }
     }
 
     /**
@@ -52,5 +48,6 @@ public class StackCommandManager {
 
     public static void registerCommand(@NotNull CommandAPICommand command) {
         commands.add(command);
+        command.register();
     }
 }

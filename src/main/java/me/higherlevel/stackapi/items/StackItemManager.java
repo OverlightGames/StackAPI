@@ -46,7 +46,7 @@ public class StackItemManager implements Listener {
         }, 0L, 5L);
 
         Bukkit.getPluginManager().registerEvents(new UnplaceableBlockItem(), StackAPI.getInstance());
-        Bukkit.getPluginManager().registerEvents(new WearableBlockItem(), StackAPI.getInstance());
+        Bukkit.getPluginManager().registerEvents(new WearableItem(), StackAPI.getInstance());
     }
 
     /**
