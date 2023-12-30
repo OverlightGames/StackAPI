@@ -3,3 +3,4 @@ version: '${project.version}'
 main: me.higherlevel.stackapi.StackAPI
 api-version: '1.20'
 description: A plugin for easily creating and managing custom ItemStacks.
+depend: [CommandAPI]

@@ -5,7 +5,7 @@ import org.bukkit.attribute.Attribute;
 
 import java.util.Objects;
 
-public class HealCommand extends AbstractStackCommand {
+public class HealCommand extends StackCommand {
     public HealCommand() {
         super(new CommandAPICommand("heal")
                 .executesPlayer((sender, args) -> {

@@ -1,10 +1,12 @@
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\StackAPI.java
+C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\commands\StackCommand.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\commands\StackItemCommand.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\SkullItemCreator.java
-C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\commands\AbstractStackCommand.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\commands\HealCommand.java
+C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\EmptyDisplayItem.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\WearableBlockItem.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\ClickableItem.java
+C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\DisplayItem.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\NonStackableItem.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\commands\StackCommandManager.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\StackItem.java
@@ -17,4 +19,3 @@ C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\StackItemDataKey.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\persistentdatatypes\EquipmentSlotDataType.java
 C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\persistentdatatypes\UUIDDataType.java
-C:\Users\Administrator\Desktop\HigherLightStudios\Plugins\StackAPI\src\main\java\me\higherlevel\stackapi\items\StackDisplayItem.java

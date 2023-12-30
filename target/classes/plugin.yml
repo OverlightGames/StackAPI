@@ -1,4 +1,6 @@
 name: StackAPI
-version: '1.0.9.2'
+version: '1.0.9.5'
 main: me.higherlevel.stackapi.StackAPI
 api-version: '1.20'
+description: A plugin for easily creating and managing custom ItemStacks.
+depend: [CommandAPI]

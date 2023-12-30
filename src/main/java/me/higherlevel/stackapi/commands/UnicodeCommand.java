@@ -11,7 +11,7 @@ import net.kyori.adventure.text.event.HoverEvent;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UnicodeCommand extends AbstractStackCommand {
+public class UnicodeCommand extends StackCommand {
     public UnicodeCommand() {
         super(new CommandAPICommand("unicode")
                 .withArguments(new StringArgument("name").replaceSuggestions(ArgumentSuggestions.strings("ascii", "accented", "nonlatin")))

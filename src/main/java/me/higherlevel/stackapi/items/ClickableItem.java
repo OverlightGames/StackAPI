@@ -28,6 +28,11 @@ public abstract class ClickableItem extends StackItem {
         setClickableData();
     }
 
+    public ClickableItem(Material material, List<String> loreText) {
+        super(material, loreText);
+        setClickableData();
+    }
+
     public ClickableItem(Material material, String displayName, List<String> loreText) {
         super(material, displayName, loreText);
         setClickableData();

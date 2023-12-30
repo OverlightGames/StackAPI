@@ -4,7 +4,7 @@ import dev.jorel.commandapi.CommandAPICommand;
 import dev.jorel.commandapi.arguments.ArgumentSuggestions;
 import dev.jorel.commandapi.arguments.GreedyStringArgument;
 import dev.jorel.commandapi.arguments.StringArgument;
-import me.higherlevel.stackapi.items.StackDisplayItem;
+import me.higherlevel.stackapi.items.EmptyDisplayItem;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
@@ -17,7 +17,7 @@ import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
 
-public class PreviewCommand extends AbstractStackCommand {
+public class PreviewCommand extends StackCommand {
     public PreviewCommand() {
         super(new CommandAPICommand("preview")
                 .withArguments(new StringArgument("type").replaceSuggestions(ArgumentSuggestions.strings("chat", "item", "lore", "actionbar", "title")), new GreedyStringArgument("message"))
@@ -27,7 +27,7 @@ public class PreviewCommand extends AbstractStackCommand {
                     } else if (args.get("type").equals("item")) {
                         Inventory itemDisplayInventory = Bukkit.createInventory(sender, 9, Component.text("Item"));
                         for (int i = 0; i < 9; i++) {
-                            itemDisplayInventory.setItem(i, new StackDisplayItem(Material.GRAY_STAINED_GLASS_PANE).item);
+                            itemDisplayInventory.setItem(i, new EmptyDisplayItem(Material.GRAY_STAINED_GLASS_PANE).item);
                         }
                         ItemStack item = new ItemStack(Material.BOW);
                         item.editMeta(itemMeta -> {
@@ -43,7 +43,7 @@ public class PreviewCommand extends AbstractStackCommand {
                     } else if (args.get("type").equals("lore")) {
                         Inventory itemDisplayInventory = Bukkit.createInventory(sender, 9, Component.text("Lore"));
                         for (int i = 0; i < 9; i++) {
-                            itemDisplayInventory.setItem(i, new StackDisplayItem(Material.GRAY_STAINED_GLASS_PANE).item);
+                            itemDisplayInventory.setItem(i, new EmptyDisplayItem(Material.GRAY_STAINED_GLASS_PANE).item);
                         }
                         ItemStack item = new ItemStack(Material.BOW);
                         item.editMeta(itemMeta -> {

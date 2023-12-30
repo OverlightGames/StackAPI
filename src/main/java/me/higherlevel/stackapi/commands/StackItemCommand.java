@@ -4,13 +4,14 @@ import dev.jorel.commandapi.CommandAPI;
 import dev.jorel.commandapi.CommandAPICommand;
 import dev.jorel.commandapi.arguments.ArgumentSuggestions;
 import dev.jorel.commandapi.arguments.IntegerArgument;
+import dev.jorel.commandapi.arguments.PlayerArgument;
 import dev.jorel.commandapi.arguments.StringArgument;
 import me.higherlevel.stackapi.items.StackItem;
 import me.higherlevel.stackapi.items.StackItemManager;
 
 import java.util.concurrent.CompletableFuture;
 
-public class StackItemCommand extends AbstractStackCommand {
+public class StackItemCommand extends StackCommand {
     public StackItemCommand() {
         super(new CommandAPICommand("stackitem")
                 .withArguments(new StringArgument("id").replaceSuggestions(ArgumentSuggestions.stringCollectionAsync(commandSenderSuggestionInfo -> CompletableFuture.supplyAsync(() -> StackItemManager.getIds()))))

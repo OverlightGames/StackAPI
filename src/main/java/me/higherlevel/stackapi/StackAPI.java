@@ -14,11 +14,6 @@ public final class StackAPI extends JavaPlugin {
     }
 
     @Override
-    public void onLoad() {
-        CommandAPI.onLoad(new CommandAPIBukkitConfig(this).silentLogs(true));
-    }
-
-    @Override
     public void onEnable() {
         instance = this;
         StackItemManager.onEnable();
@@ -30,7 +25,6 @@ public final class StackAPI extends JavaPlugin {
     @Override
     public void onDisable() {
         StackCommandManager.onDisable();
-        CommandAPI.onDisable();
         getLogger().info("Disabled.");
     }
 }

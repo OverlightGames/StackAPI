@@ -10,7 +10,7 @@ import java.util.Set;
 /**
  * <p>Keeps track of every registered {@link CommandAPICommand} by storing {@link CommandAPICommand}s in a {@link HashSet} called {@link #commands}.</p>
  * <br>
- * <p>Before constructing a new {@link AbstractStackCommand} object, check if the ServerCommandManager is enabled with {@link StackCommandManager#isEnabled() ServerCommandManager#isEnabled()}.</p>
+ * <p>Before constructing a new {@link StackCommand} object, check if the ServerCommandManager is enabled with {@link StackCommandManager#isEnabled() ServerCommandManager#isEnabled()}.</p>
  */
 public class StackCommandManager {
     private static Set<CommandAPICommand> commands = new HashSet<>();
@@ -24,7 +24,7 @@ public class StackCommandManager {
     }
 
     /**
-     * <p>Should be called before constructing any new {@link AbstractStackCommand} objects.</p>
+     * <p>Should be called before constructing any new {@link StackCommand} objects.</p>
      */
     public static void onEnable() {
         enabled = true;
@@ -33,6 +33,10 @@ public class StackCommandManager {
         new PreviewCommand();
         new UnicodeCommand();
         new StackItemCommand();
+
+        for (CommandAPICommand cmd : commands) {
+            cmd.register();
+        }
     }
 
     /**
@@ -47,8 +51,6 @@ public class StackCommandManager {
     }
 
     public static void registerCommand(@NotNull CommandAPICommand command) {
-        if (!enabled) return;
         commands.add(command);
-        command.register();
     }
 }
