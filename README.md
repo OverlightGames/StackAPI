@@ -1,7 +1,7 @@
 # StackAPI
 A plugin for easily creating and managing custom ItemStacks.
 ## Planned features
-- ~~Dependency implementation (for use outside of the plugin itself)~~ **DONE!**
+- **DONE!** ~~Dependency implementation (for use outside of the plugin itself)~~
 - Custom Inventory creation
 - Cross-version NMS (net.minecraft.server) implementation and usage
 - Flexible commands with the Brigadier API
