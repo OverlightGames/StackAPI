@@ -54,6 +54,7 @@ public class WearableItem implements Listener {
 
     @EventHandler
     public void onPlayerClickArmorSlot(InventoryClickEvent e) {
+        if (e.getClickedInventory() == null) return;
         if (!e.getClickedInventory().getType().equals(InventoryType.PLAYER)) return;
         ItemStack cursorItem = e.getCursor();
         ItemStack currentItem = e.getCurrentItem();

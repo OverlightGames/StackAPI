@@ -57,7 +57,7 @@ public class StackItemManager implements Listener {
      */
     public static StackItem fromId(String id) {
         if (!items.containsKey(id)) {
-            throw new IllegalArgumentException("ServerItem with ID '" + "' not found.");
+            throw new IllegalArgumentException("ServerItem with ID '" + id + "' not found.");
         }
         return items.get(id);
     }

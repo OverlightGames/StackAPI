@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="StackAPI:jar">
-    <output-path>$PROJECT_DIR$/../../Servers/moon 1.20.2/plugins</output-path>
+    <output-path>$PROJECT_DIR$/../../Servers/moon 1.20.4/plugins</output-path>
     <root id="archive" name="StackAPI.jar">
       <element id="module-output" name="StackAPI" />
     </root>

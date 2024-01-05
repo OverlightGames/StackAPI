@@ -2,6 +2,7 @@ package me.higherlevel.stackapi.items;
 
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -10,7 +11,7 @@ import org.bukkit.persistence.PersistentDataType;
 import java.util.List;
 import java.util.function.Consumer;
 
-public abstract class ClickableItem extends StackItem {
+public abstract class ClickableItem extends StackItem implements Listener {
     private static final StackItemDataKey CLICKABLE_KEY = new StackItemDataKey("clickable", PersistentDataType.BOOLEAN);
     private static final StackItemDataKey UNCLICKABLE_KEY = new StackItemDataKey("unclickable", PersistentDataType.BOOLEAN);
 
@@ -70,7 +71,7 @@ public abstract class ClickableItem extends StackItem {
 
     @EventHandler
     public void onInventoryClick(InventoryClickEvent e) {
-        if (CLICKABLE_KEY.dataEquals(e.getCurrentItem(), true)) {
+        if (CLICKABLE_KEY.dataEquals(e.getCurrentItem(), true) && itemIdMatches(e.getCurrentItem())) {
             onClick(e);
         } else if (UNCLICKABLE_KEY.dataEquals(e.getCurrentItem(), true)) {
             e.setCancelled(true);

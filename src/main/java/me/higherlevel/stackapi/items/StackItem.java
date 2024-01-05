@@ -69,7 +69,8 @@ public abstract class StackItem implements Listener {
      * @return true if the {@link ItemStack}'s ID matches the specified ID, otherwise false
      */
     public boolean itemIdMatches(ItemStack item, String id) {
-        return StackItemManager.getId(item) == id;
+        if (StackItemManager.getId(item) == null) return false;
+        return StackItemManager.getId(item).equals(id);
     }
 
     /**
